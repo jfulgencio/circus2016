@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS3 animation effects for Magnific Popup</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html, body {
+  -webkit-backface-visibility: hidden;
+}
+
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* 
+
+====== 3d unfold ======
+
+*/
+.mfp-3d-unfold {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-3d-unfold .mfp-content {
+  perspective: 2000px;
+}
+.mfp-3d-unfold .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(-60deg);
+}
+.mfp-3d-unfold.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.mfp-3d-unfold.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-3d-unfold.mfp-removing .mfp-with-anim {
+  transform: rotateY(60deg);
+  opacity: 0;
+}
+.mfp-3d-unfold.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+</style>
+
+    
+      <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+<div class="links">
+
+  <div id="inline-popups">
+  
+    <a href="#test1" data-effect="mfp-3d-unfold">3d unfold</a>
+       
+
+</div>
+    <div class="links">
+
+  <div id="inline-popups">
+  
+    <a href="#test2" data-effect="mfp-3d-unfold">3d unfold</a>
+       
+
+</div>
+
+
+<!-- Popup itself -->
+<div id="test1" class="white-popup mfp-with-anim mfp-hide">You may put any HTML here. This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</div>
+<div id="test2" class="white-popup mfp-with-anim mfp-hide">YLore jsdfhjdskfhl</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>
+
+    <script src="js/index.js"></script>
+    
+    
+  </body>
+</html>
