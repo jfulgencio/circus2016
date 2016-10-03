@@ -3178,7 +3178,7 @@ if(isset($_POST['submit_email'])) {
                 </div>
                 <div class="footer-right">
                     701 FORTUNE EXECUTIVE TOWER, JLT, DUBAI, UNITED ARAB EMIRATES</span> <br />
-                <span style="font-size:15px; color:#3ac1cf">+971 4 447 3554  |  <a href="mailto:hello@thecircus.ae">HELLO@THECIRCUS.AE</a></span></div>
+                <span style="font-size:15px; color:#3ac1cf">+971 4 447 3554  |  <a href="mailto:hello@thecircus.ae" style="color:#3ac1cf">HELLO@THECIRCUS.AE</a></span></div>
                 <div class="scroll_to_top pe-7s-up-arrow"></div>
             </div>
             <div class="clear"></div>
